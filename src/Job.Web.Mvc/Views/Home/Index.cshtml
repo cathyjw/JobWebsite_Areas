@@ -1,0 +1,29 @@
+﻿@model Job.Web.Models.HomeModel
+
+@{
+    ViewBag.Title = "Job Display";
+}
+
+@section styles {
+    <link href="~/bundles/bundles.css" rel="stylesheet" asp-append-version="true" />
+}
+
+<h2>Job Information</h2>
+
+<table class="table table-bordered table-hover">
+	<thead>
+	<tr>
+		<th><b>Id</b></th>
+		<th><b>Job Title</b></th>
+	</tr>
+	</thead>
+	<tbody>
+			
+	<tr>
+		<td>@Model.Id</td>
+		<td>@Model.Title</td>
+	</tr>
+	</tbody>
+</table>
+
+
